@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Dizayn tanlash — Student Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="app-header__icon">🎨</div>
+    <div>
+      <h1 class="app-header__title">Taqdimot dizayni</h1>
+      <p class="app-header__subtitle">Biror bir dizaynni tanlang</p>
+    </div>
+  </header>
+
+  <div class="search-box">
+    <span class="search-box__icon">🔍</span>
+    <input
+      id="search"
+      class="search-box__input"
+      type="search"
+      placeholder="Dizayn qidirish..."
+      autocomplete="off"
+    />
+  </div>
+
+  <nav id="categories" class="categories" aria-label="Dizayn kategoriyalari"></nav>
+
+  <main id="grid" class="grid" aria-live="polite"></main>
+
+  <p id="empty" class="empty hidden">Hech narsa topilmadi 🔎</p>
+
+  <footer id="bottom-bar" class="bottom-bar hidden">
+    <div id="bottom-preview" class="bottom-bar__preview"></div>
+    <div class="bottom-bar__info">
+      <div id="bottom-name" class="bottom-bar__name"></div>
+      <div id="bottom-desc" class="bottom-bar__desc"></div>
+    </div>
+    <button id="select-btn" class="bottom-bar__button" type="button">Tanlash</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

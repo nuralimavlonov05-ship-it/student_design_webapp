@@ -1,0 +1,4 @@
+# Statik fayllar — hech narsa build qilinmaydi
+node_modules/
+.DS_Store
+*.log

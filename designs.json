@@ -1,0 +1,274 @@
+{
+  "categories": [
+    {
+      "key": "all",
+      "label": "Barchasi"
+    },
+    {
+      "key": "business",
+      "label": "Biznes"
+    },
+    {
+      "key": "education",
+      "label": "Ta'lim"
+    },
+    {
+      "key": "academic",
+      "label": "Ilmiy"
+    },
+    {
+      "key": "creative",
+      "label": "Ijodiy"
+    },
+    {
+      "key": "minimal",
+      "label": "Minimal"
+    },
+    {
+      "key": "tech",
+      "label": "Tex"
+    }
+  ],
+  "designs": [
+    {
+      "id": "corporate-blue",
+      "name": "Corporate Blue Professional",
+      "category": "business",
+      "description": "Klassik korporativ ko'k palitra",
+      "primary": "#1E3A8A",
+      "secondary": "#3B82F6",
+      "accent": "#F59E0B",
+      "dark": false
+    },
+    {
+      "id": "modern-pitch",
+      "name": "Modern Business Pitch",
+      "category": "business",
+      "description": "Zamonaviy startap taqdimoti",
+      "primary": "#0F172A",
+      "secondary": "#6366F1",
+      "accent": "#22D3EE",
+      "dark": false
+    },
+    {
+      "id": "startup-deck",
+      "name": "Startup Pitch Deck",
+      "category": "business",
+      "description": "Yorqin startap dizayni",
+      "primary": "#7C3AED",
+      "secondary": "#A78BFA",
+      "accent": "#FBBF24",
+      "dark": false
+    },
+    {
+      "id": "finance-report",
+      "name": "Finance Report",
+      "category": "business",
+      "description": "Moliyaviy hisobotlar uchun",
+      "primary": "#064E3B",
+      "secondary": "#10B981",
+      "accent": "#FDE68A",
+      "dark": false
+    },
+    {
+      "id": "playful-education",
+      "name": "Bright Playful Education",
+      "category": "education",
+      "description": "Yorqin o'quv dizayni",
+      "primary": "#EA580C",
+      "secondary": "#FB923C",
+      "accent": "#84CC16",
+      "dark": false
+    },
+    {
+      "id": "classroom",
+      "name": "Classroom Presentation",
+      "category": "education",
+      "description": "Sinfxona va darslik uslubi",
+      "primary": "#1D4ED8",
+      "secondary": "#60A5FA",
+      "accent": "#FACC15",
+      "dark": false
+    },
+    {
+      "id": "science-fair",
+      "name": "Science Fair",
+      "category": "education",
+      "description": "Ilmiy ko'rgazma dizayni",
+      "primary": "#0E7490",
+      "secondary": "#22D3EE",
+      "accent": "#F472B6",
+      "dark": false
+    },
+    {
+      "id": "language-learning",
+      "name": "Language Learning",
+      "category": "education",
+      "description": "Til o'rganish uchun",
+      "primary": "#BE185D",
+      "secondary": "#F472B6",
+      "accent": "#34D399",
+      "dark": false
+    },
+    {
+      "id": "academic-minimal",
+      "name": "Minimalist Academic",
+      "category": "academic",
+      "description": "Sof ilmiy uslub",
+      "primary": "#111827",
+      "secondary": "#4B5563",
+      "accent": "#DC2626",
+      "dark": false
+    },
+    {
+      "id": "university-thesis",
+      "name": "University Thesis",
+      "category": "academic",
+      "description": "Universitet ishlari uchun",
+      "primary": "#1E3A5F",
+      "secondary": "#3D5A80",
+      "accent": "#EE6C4D",
+      "dark": false
+    },
+    {
+      "id": "research-paper",
+      "name": "Research Paper",
+      "category": "academic",
+      "description": "Tadqiqot maqolalari uslubi",
+      "primary": "#2D6A4F",
+      "secondary": "#52B788",
+      "accent": "#FFB703",
+      "dark": false
+    },
+    {
+      "id": "academic-defense",
+      "name": "Academic Defense",
+      "category": "academic",
+      "description": "Mudofaa taqdimoti",
+      "primary": "#374151",
+      "secondary": "#6B7280",
+      "accent": "#B91C1C",
+      "dark": false
+    },
+    {
+      "id": "vibrant-creative",
+      "name": "Vibrant Creative",
+      "category": "creative",
+      "description": "Energetik rang-barang dizayn",
+      "primary": "#DB2777",
+      "secondary": "#F472B6",
+      "accent": "#FDE047",
+      "dark": false
+    },
+    {
+      "id": "colorful-modern",
+      "name": "Colorful Modern Business",
+      "category": "creative",
+      "description": "Rang-barang zamonaviy",
+      "primary": "#2563EB",
+      "secondary": "#F97316",
+      "accent": "#10B981",
+      "dark": false
+    },
+    {
+      "id": "art-portfolio",
+      "name": "Art Portfolio",
+      "category": "creative",
+      "description": "San'at portfolyosi uslubi",
+      "primary": "#7F1D1D",
+      "secondary": "#EF4444",
+      "accent": "#FCD34D",
+      "dark": false
+    },
+    {
+      "id": "creative-agency",
+      "name": "Creative Agency",
+      "category": "creative",
+      "description": "Ijodiy agentlik dizayni",
+      "primary": "#581C87",
+      "secondary": "#C084FC",
+      "accent": "#FACC15",
+      "dark": false
+    },
+    {
+      "id": "black-white-simple",
+      "name": "Black and White Simple",
+      "category": "minimal",
+      "description": "Qora-oq sof minimal",
+      "primary": "#111827",
+      "secondary": "#6B7280",
+      "accent": "#111827",
+      "dark": false
+    },
+    {
+      "id": "clean-minimal",
+      "name": "Clean Minimal",
+      "category": "minimal",
+      "description": "Toza va osminonal",
+      "primary": "#F8FAFC",
+      "secondary": "#94A3B8",
+      "accent": "#0F172A",
+      "dark": false
+    },
+    {
+      "id": "elegant-mono",
+      "name": "Elegant Mono",
+      "category": "minimal",
+      "description": "Jozibali monoton dizayn",
+      "primary": "#1F2937",
+      "secondary": "#9CA3AF",
+      "accent": "#D97706",
+      "dark": false
+    },
+    {
+      "id": "swiss-style",
+      "name": "Swiss Style",
+      "category": "minimal",
+      "description": "Shveysariya grid uslubi",
+      "primary": "#FAFAFA",
+      "secondary": "#E5E7EB",
+      "accent": "#DC2626",
+      "dark": false
+    },
+    {
+      "id": "dark-elegant-tech",
+      "name": "Dark Elegant Tech",
+      "category": "tech",
+      "description": "Qorong'u jozibali tex dizayn",
+      "primary": "#0B1120",
+      "secondary": "#1E293B",
+      "accent": "#38BDF8",
+      "dark": true
+    },
+    {
+      "id": "neon-cyber",
+      "name": "Neon Cyber",
+      "category": "tech",
+      "description": "Neon kiber dizayni",
+      "primary": "#0D0221",
+      "secondary": "#2E1A47",
+      "accent": "#00F5D4",
+      "dark": true
+    },
+    {
+      "id": "developer-deck",
+      "name": "Developer Deck",
+      "category": "tech",
+      "description": "Dasturchilar uchun",
+      "primary": "#0F172A",
+      "secondary": "#1E293B",
+      "accent": "#4ADE80",
+      "dark": true
+    },
+    {
+      "id": "futuristic",
+      "name": "Futuristic",
+      "category": "tech",
+      "description": "Futuristik dizayn",
+      "primary": "#111827",
+      "secondary": "#4C1D95",
+      "accent": "#A78BFA",
+      "dark": true
+    }
+  ]
+}
