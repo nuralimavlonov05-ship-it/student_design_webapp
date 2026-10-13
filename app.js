@@ -200,15 +200,33 @@ Ishlash tartibi:
     }
   }
 
+  var isSent = false;
+
   function sendSelection() {
+    // Telegram sendData'ni bir marta qabul qiladi — qayta yuborishga
+    // urinib ko'rmaslik uchun himoya qo'yamiz.
+    if (isSent) {
+      return;
+    }
     var design = findDesign(state.selectedId);
     if (!design) {
       return;
     }
-    if (tg) {
-      // Botga JSON formatida yuborish
-      tg.sendData(JSON.stringify({ design: design.name }));
-      tg.close();
+    if (tg && typeof tg.sendData === "function") {
+      isSent = true;
+      try {
+        if (tg.HapticFeedback) {
+          tg.HapticFeedback.notificationOccurred("success");
+        }
+      } catch (e) {
+        /* haptic — ixtiyoriy */
+      }
+      try {
+        // sendData() o'zi Web App'ni yopadi, qo'lda tg.close() kerak emas.
+        tg.sendData(JSON.stringify({ design: design.name, id: design.id }));
+      } catch (e) {
+        isSent = false;
+      }
     } else {
       // Telegram tashqarisida — nusxalab olish
       var text = "Tanlangan dizayn: " + design.name;
@@ -274,6 +292,11 @@ Ishlash tartibi:
     if (tg) {
       tg.ready();
       tg.expand();
+      // Telegram'ning pastki ko'k tugmasi ("Tanlash: <nom>") — uni
+      // bosilishida tanlov botga yuborilishi uchun handler ulanadi.
+      if (tg.MainButton) {
+        tg.MainButton.onClick(sendSelection);
+      }
     }
   }
 
