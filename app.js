@@ -200,6 +200,31 @@ Ishlash tartibi:
     }
   }
 
+  var BOT_USERNAME = "Student_student_ai_bot";
+
+  // --- Zaxira yo'l (deep-link) ---
+  // Telegram WebView ba'zi holatlarda sendData'ni qabul qilmaydi
+  // (eski kesh, ba'zi versiyalar). Shunda foydalanuvchi hech narsa
+  // ko'rmaydi. Shu sababli tanlashdan keyin "Botga yuborish" tugmasi
+  // ko'rsatiladi — u to'g'ridan-to'g'ri botga deep-link ochadi va
+  // qo'lda yozish talab qilmaydi.
+  function buildDeepLink(design) {
+    return "https://t.me/" + BOT_USERNAME + "?start=design_" + encodeURIComponent(design.id);
+  }
+
+  function showSentPanel(design) {
+    var panel = document.getElementById("sent-panel");
+    var nameEl = document.getElementById("sent-name");
+    var linkEl = document.getElementById("sent-link");
+    if (!panel || !nameEl || !linkEl) {
+      return;
+    }
+    nameEl.textContent = design.name;
+    linkEl.href = buildDeepLink(design);
+    panel.classList.remove("hidden");
+    panel.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  }
+
   var isSent = false;
 
   function sendSelection() {
@@ -227,7 +252,11 @@ Ishlash tartibi:
       } catch (e) {
         isSent = false;
       }
+      // sendData ishlamasa yoki Web App yopilmasa, zaxira tugma ko'rinadi
+      showSentPanel(design);
     } else {
+      // Telegram tashqarisida (yoki sendData ishlamasa) — zaxira ko'rsatiladi
+      showSentPanel(design);
       // Telegram tashqarisida — nusxalab olish
       var text = "Tanlangan dizayn: " + design.name;
       if (navigator.clipboard && navigator.clipboard.writeText) {
